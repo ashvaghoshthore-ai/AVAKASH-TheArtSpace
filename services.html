@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500;1,6..72,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#556B2F",
+                        "background-light": "#f7f7f6",
+                        "background-dark": "#1a1d15",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"],
+                        "headline": ["Inter"],
+                        "body": ["Newsreader"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .tonal-transition {
+            background: linear-gradient(to bottom, #131313, transparent);
+        }
+        .glass-card {
+            background: rgba(53, 53, 52, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(69, 72, 60, 0.15);
+        }
+        .sculpted-shadow {
+            box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-label selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/60 backdrop-blur-xl transition-all duration-[400ms] ease-in-out border-b border-outline-variant/10">
+<div class="flex justify-between items-center px-6 lg:px-12 py-6 max-w-[1920px] mx-auto">
+<a href="index.html" class="flex items-center gap-4">
+    <img src="images/logo.png" alt="Avakash Logo" class="h-12 w-12 object-cover rounded-full shadow-lg border border-outline-variant/30">
+    <div class="text-xl md:text-2xl font-black tracking-tighter text-[#e5e2e1] uppercase font-headline">Avakash</div>
+</a>
+<div class="hidden md:flex items-center gap-8 lg:gap-12">
+<a class="font-['Inter'] font-bold tracking-tighter uppercase text-[#e5e2e1] hover:text-[#c1cd89] transition-colors duration-300" href="index.html">Home</a>
+<a class="font-['Inter'] font-bold tracking-tighter uppercase text-[#e5e2e1] hover:text-[#c1cd89] transition-colors duration-300" href="services.html">Classes</a>
+<a class="font-['Inter'] font-bold tracking-tighter uppercase text-[#e5e2e1] hover:text-[#c1cd89] transition-colors duration-300" href="about.html">About &amp; Gallery</a>
+</div>
+<button onclick="window.location.href='contact.html'" class="bg-primary text-on-primary px-6 py-2.5 font-bold tracking-tighter uppercase text-sm scale-95 active:scale-90 transition-transform hover:bg-[#2a2a2a]/40 hidden sm:block rounded-sm">
+            Enrol Now
+        </button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-[1400px] mx-auto min-h-screen">
+<!-- Hero Branding Section -->
+<header class="mb-20 text-center md:text-left">
+<h1 class="font-headline font-black text-5xl md:text-7xl tracking-tighter uppercase leading-[0.9] text-on-surface-variant mb-6">
+                Find Your <span class="text-primary">Rhythm</span> — At Every Age
+            </h1>
+<p class="font-body italic text-xl md:text-2xl text-secondary max-w-3xl leading-relaxed">
+                At Avakash, we offer structured Bharatnatyam courses for different age groups and skill levels. Classes are held live every Tuesday and Wednesday, with two batch timings to suit your schedule.
+            </p>
+<div class="mt-10 inline-block glass-card p-6 rounded-sm text-left">
+<div class="flex flex-col md:flex-row md:items-center gap-6 text-sm uppercase font-bold tracking-widest text-[#e5e2e1]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">calendar_today</span>
+<span>Tue &amp; Wed</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span>Batch 1: 5:00 PM – 6:00 PM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span>Batch 2: 6:00 PM – 7:00 PM</span>
+</div>
+<div class="bg-primary/20 px-3 py-1 text-xs">Beginners &amp; Intermediate</div>
+</div>
+</div>
+</header>
+<!-- Classes Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+<!-- Course Card 1: Kids -->
+<div class="glass-card p-10 flex flex-col justify-between group hover:bg-[#2a2a2a]/40 transition-all duration-500 rounded-sm">
+<div>
+<div class="mb-12 relative h-32 w-32 mx-auto md:mx-0">
+<div class="absolute inset-0 bg-primary/10 blur-3xl rounded-full"></div>
+<div class="relative z-10 flex items-center justify-center h-full overflow-hidden rounded-sm">
+<img alt="Abstract 3D artwork" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0uhxdob4hs3rXoaVHLvgPGloAfaS91X1rWxHFszAjxYB40FQIGZylsI2kK46z6KTS_bOBaLCQiqSqYCuXdm07TjReQJ4L2xKV1MrOuFLBxVMhe8rzxIabI8lPj0p4d2JjBf19qz4RDJRrPkL-fpLfdfYHMJdk86lU9d66OxHiQ6F0S55ofJ11hBux2Xg918IO6nXJS_9y0OsuJ2x6LBN2C9plDx_LZdaCXOA8QJAk1bpK_9iThmFk-Oiy93-061GjpjyDNr1qg3CUA"/>
+</div>
+</div>
+<h2 class="font-headline font-extrabold text-2xl uppercase tracking-tighter mb-2">Little Lamps</h2>
+<p class="font-['Inter'] text-xs uppercase tracking-[0.2em] text-primary mb-6 font-bold">Kids (Ages 5–12)</p>
+<p class="font-body italic text-lg text-[#e5e2e1]/80 mb-6">"Introducing young hearts to the world of classical dance"</p>
+<p class="font-['Inter'] text-sm leading-relaxed text-secondary-fixed-dim mb-8">Our Kids programme introduces children to the foundational elements of Bharatnatyam — basic adavus, hand gestures, rhythmic awareness, and the joy of expressive movement — all in a nurturing, playful environment.</p>
+<div class="space-y-3 mb-12 border-t border-white/5 pt-6">
+<p class="text-[10px] uppercase tracking-widest text-white/40 font-bold mb-2">What they learn:</p>
+<div class="flex items-center space-x-3 text-xs tracking-wide text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Adavus &amp; Abhinaya</span>
+</div>
+<div class="flex items-center space-x-3 text-xs tracking-wide text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Theory + Practical</span>
+</div>
+<div class="flex items-center space-x-3 text-xs tracking-wide text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Stage Guidance</span>
+</div>
+</div>
+</div>
+<button onclick="window.location.href='contact.html'" class="w-full border border-outline-variant py-4 font-headline font-bold uppercase tracking-widest text-xs hover:bg-primary hover:text-on-primary hover:border-primary transition-all duration-300">
+                    Enrol Your Child →
+                </button>
+</div>
+<!-- Course Card 2: Teens -->
+<div class="glass-card p-10 flex flex-col justify-between group bg-surface-container-high/60 transition-all duration-500 rounded-sm border-t-2 border-t-primary">
+<div>
+<div class="mb-12 relative h-32 w-32 mx-auto md:mx-0">
+<div class="absolute inset-0 bg-primary-container/20 blur-3xl rounded-full"></div>
+<div class="relative z-10 flex items-center justify-center h-full overflow-hidden rounded-sm">
+<img alt="Abstract 3D artwork" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0uiw3QR1my4belEeiy2PNzmVo19adhmqxrJuv30npkWgGGrYjf6QMUo87t79PHSWI9Efm2maVepF5OVU9cAO2d5Php_SRgHTZ8FTidmdvDjbqtSACFCODeL1yhQZDMv2olsySDXxMMSvRUd-m5ZsZvH5gbPjLsdsuxBF82_nWXC1ITV04wPg53sWnk37QM9q-RkwsS393_3y2r7N1v482nUWqveA_egMA48yguNNd0mETOlfvhWQYSvR3t1yXSs6nR3ILBN1mJquqds"/>
+</div>
+</div>
+<h2 class="font-headline font-extrabold text-2xl uppercase tracking-tighter mb-2">Rising Dancers</h2>
+<p class="font-['Inter'] text-xs uppercase tracking-[0.2em] text-primary mb-6 font-bold">Teens (Ages 13–18)</p>
+<p class="font-body italic text-lg text-[#e5e2e1]/80 mb-6">"Channelling teenage energy into classical discipline"</p>
+<p class="font-['Inter'] text-sm leading-relaxed text-secondary-fixed-dim mb-8">Our Teens programme builds on foundational knowledge, introducing Jathis, compositions, and deeper Abhinaya — helping students discover their individual voice within the classical form.</p>
+<div class="space-y-3 mb-12 border-t border-white/5 pt-6">
+<p class="text-[10px] uppercase tracking-widest text-white/40 font-bold mb-2">What they learn:</p>
+<div class="flex items-center space-x-3 text-xs tracking-wide text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Adavus &amp; Jathis</span>
+</div>
+<div class="flex items-center space-x-3 text-xs tracking-wide text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Abhinaya &amp; Theory</span>
+</div>
+<div class="flex items-center space-x-3 text-xs tracking-wide text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Stage Guidance</span>
+</div>
+</div>
+</div>
+<button onclick="window.location.href='contact.html'" class="w-full bg-primary py-4 font-headline font-bold uppercase tracking-widest text-xs hover:bg-primary-fixed transition-all duration-300 text-white">
+                    Join the Batch →
+                </button>
+</div>
+<!-- Course Card 3: Adults -->
+<div class="glass-card p-10 flex flex-col justify-between group hover:bg-[#2a2a2a]/40 transition-all duration-500 rounded-sm">
+<div>
+<div class="mb-12 relative h-32 w-32 mx-auto md:mx-0">
+<div class="absolute inset-0 bg-primary/5 blur-3xl rounded-full"></div>
+<div class="relative z-10 flex items-center justify-center h-full overflow-hidden rounded-sm">
+<img alt="Abstract 3D artwork" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0ujeJlsISSB_fn5VBrCbuSWfc8aS5AatHPWlVNSpY1wdU2tipounFfqUTkyZe1sDh4pkkpqpCY45iOb_6UM4d6jO-uMP_Oof-yKGf22fbsWunjRGivRVnPvkRmLfzcLV3YcFAmvK8KiJzyWdxW79hZHRawZjHV5FBaNWe9WT3E8x20elYOZ4qnQDBLVND8TPw_EWLRa-e5QvrWEyTeiADZhkNPs1iIKmc3yAYCYsjKJyC7_6UskgH-o47fDNy1COBg3HpHf7jtnb3Yk"/>
+</div>
+</div>
+<h2 class="font-headline font-extrabold text-2xl uppercase tracking-tighter mb-2">Art Has No Age</h2>
+<p class="font-['Inter'] text-xs uppercase tracking-[0.2em] text-primary mb-6 font-bold">Adults (18+)</p>
+<p class="font-body italic text-lg text-[#e5e2e1]/80 mb-6">"For those who always wanted to learn — and those returning home"</p>
+<p class="font-['Inter'] text-sm leading-relaxed text-secondary-fixed-dim mb-8">Whether you are picking up dance for the first time or returning to a form you once loved, this course is designed for you. We create a judgement-free space where adults explore Bharatnatyam at their own pace.</p>
+<div class="space-y-3 mb-12 border-t border-white/5 pt-6">
+<p class="text-[10px] uppercase tracking-widest text-white/40 font-bold mb-2">What you learn:</p>
+<div class="flex items-center space-x-3 text-xs tracking-wide text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Adavus &amp; Abhinaya</span>
+</div>
+<div class="flex items-center space-x-3 text-xs tracking-wide text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Theory + Practical</span>
+</div>
+<div class="flex items-center space-x-3 text-xs tracking-wide text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Stage Guidance</span>
+</div>
+</div>
+</div>
+<button onclick="window.location.href='contact.html'" class="w-full border border-outline-variant py-4 font-headline font-bold uppercase tracking-widest text-xs hover:bg-primary hover:text-on-primary hover:border-primary transition-all duration-300">
+                    Start Today →
+                </button>
+</div>
+</div>
+<!-- Highlights Section -->
+<section class="mt-32">
+<h3 class="font-headline font-black text-3xl uppercase tracking-tighter text-center mb-16">What Every Session Includes</h3>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary text-4xl">live_tv</span>
+<p class="text-xs font-bold uppercase tracking-widest leading-tight">Live Step-by-Step Guidance</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary text-4xl">person_search</span>
+<p class="text-xs font-bold uppercase tracking-widest leading-tight">One-on-One Attention</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary text-4xl">quiz</span>
+<p class="text-xs font-bold uppercase tracking-widest leading-tight">Doubt Solving During Class</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary text-4xl">chat_bubble</span>
+<p class="text-xs font-bold uppercase tracking-widest leading-tight">Personal Feedback on Abhinaya</p>
+</div>
+<div class="space-y-4 col-span-2 md:col-span-1">
+<span class="material-symbols-outlined text-primary text-4xl">home</span>
+<p class="text-xs font-bold uppercase tracking-widest leading-tight">Learn Comfortably from Home</p>
+</div>
+</div>
+</section>
+<!-- Philosophical Footer Note -->
+<div class="mt-32 text-center">
+<div class="w-12 h-[1px] bg-outline-variant mx-auto mb-8"></div>
+<p class="font-body italic text-2xl text-on-surface-variant max-w-xl mx-auto leading-relaxed">
+                "Movement is the bridge between the transient and the eternal. Every mudra is a chiseled prayer."
+            </p>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#45483c]/15 bg-[#0e0e0e]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-[1920px] mx-auto">
+<div class="mb-8 md:mb-0">
+<a href="index.html"><img src="images/logo.png" alt="Avakash Logo" class="h-16 w-16 object-cover rounded-full shadow-xl border border-outline-variant/30 mb-4"></a>
+<span class="text-[#e5e2e1] font-bold text-lg uppercase tracking-widest">Avakash</span>
+<p class="font-['Newsreader'] italic text-sm tracking-wide text-[#e5e2e1]/60 mt-2">© 2024 Avakash — The Art Space. The Kinetic Sculpture in Motion.</p>
+</div>
+<div class="flex space-x-8">
+<a class="font-['Newsreader'] italic text-sm tracking-wide text-[#e5e2e1]/60 hover:text-[#c1cd89] transition-colors duration-500" href="#">Privacy</a>
+<a class="font-['Newsreader'] italic text-sm tracking-wide text-[#e5e2e1]/60 hover:text-[#c1cd89] transition-colors duration-500" href="#">Terms</a>
+<a class="font-['Newsreader'] italic text-sm tracking-wide text-[#e5e2e1]/60 hover:text-[#c1cd89] transition-colors duration-500" href="contact.html">Contact</a>
+<a class="font-['Newsreader'] italic text-sm tracking-wide text-[#e5e2e1]/60 hover:text-[#c1cd89] transition-colors duration-500" href="https://www.instagram.com/ektak_162/" target="_blank">Instagram</a>
+</div>
+</div>
+</footer>
+<!-- Abstract Background Element -->
+<div class="fixed top-1/2 right-0 -translate-y-1/2 w-96 h-96 bg-primary/5 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+<div class="fixed bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-surface-container-lowest to-transparent -z-20 pointer-events-none"></div>
+</body></html>

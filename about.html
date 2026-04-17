@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#c1cd89",
+                    "primary-fixed": "#dde9a2",
+                    "on-primary-fixed-variant": "#424b15",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "on-tertiary-container": "#e1e1e1",
+                    "background": "#131313",
+                    "on-tertiary": "#2f3131",
+                    "surface-tint": "#c1cd89",
+                    "secondary-fixed": "#e1e4d2",
+                    "on-primary": "#2b3401",
+                    "secondary": "#c5c8b7",
+                    "on-error-container": "#ffdad6",
+                    "on-error": "#690005",
+                    "outline": "#8f9284",
+                    "tertiary": "#c6c6c7",
+                    "surface-container-high": "#2a2a2a",
+                    "on-secondary-fixed-variant": "#44483b",
+                    "secondary-fixed-dim": "#c5c8b7",
+                    "surface-container": "#201f1f",
+                    "surface": "#131313",
+                    "error-container": "#93000a",
+                    "primary-fixed-dim": "#c1cd89",
+                    "surface-container-highest": "#353534",
+                    "inverse-primary": "#59632b",
+                    "inverse-surface": "#e5e2e1",
+                    "surface-variant": "#353534",
+                    "on-surface-variant": "#c5c8b8",
+                    "outline-variant": "#45483c",
+                    "primary-container": "#5e6930",
+                    "surface-container-low": "#1c1b1b",
+                    "on-secondary-fixed": "#191d12",
+                    "tertiary-fixed": "#e2e2e2",
+                    "tertiary-container": "#626464",
+                    "on-background": "#e5e2e1",
+                    "on-surface": "#e5e2e1",
+                    "on-secondary": "#2e3226",
+                    "surface-dim": "#131313",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "surface-bright": "#393939",
+                    "inverse-on-surface": "#313030",
+                    "secondary-container": "#474b3d",
+                    "on-secondary-container": "#b7baa9",
+                    "on-primary-container": "#dce8a1",
+                    "error": "#ffb4ab",
+                    "on-primary-fixed": "#181e00",
+                    "on-tertiary-fixed": "#1a1c1c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Newsreader"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-transition {
+            background: linear-gradient(to bottom, #131313 0%, rgba(19, 19, 19, 0) 100%);
+        }
+        .glass-card {
+            background: rgba(53, 53, 52, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(69, 72, 60, 0.15);
+        }
+        .hero-glow {
+            background: radial-gradient(circle at center, #5e6930 0%, #131313 70%);
+            opacity: 0.15;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-label selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/60 backdrop-blur-xl transition-all duration-[400ms] ease-in-out border-b border-outline-variant/10">
+<div class="flex justify-between items-center px-6 lg:px-12 py-6 max-w-[1920px] mx-auto">
+<a href="index.html" class="flex items-center gap-4">
+    <img src="images/logo.png" alt="Avakash Logo" class="h-12 w-12 object-cover rounded-full shadow-lg border border-outline-variant/30">
+    <div class="text-xl md:text-2xl font-black tracking-tighter text-[#e5e2e1] uppercase font-headline">Avakash</div>
+</a>
+<div class="hidden md:flex items-center gap-8 lg:gap-12">
+<a class="font-['Inter'] font-bold tracking-tighter uppercase text-[#e5e2e1] hover:text-[#c1cd89] transition-colors duration-300" href="index.html">Home</a>
+<a class="font-['Inter'] font-bold tracking-tighter uppercase text-[#e5e2e1] hover:text-[#c1cd89] transition-colors duration-300" href="services.html">Classes</a>
+<a class="font-['Inter'] font-bold tracking-tighter uppercase text-[#e5e2e1] hover:text-[#c1cd89] transition-colors duration-300" href="about.html">About &amp; Gallery</a>
+</div>
+<button onclick="window.location.href='contact.html'" class="bg-primary text-on-primary px-6 py-2.5 font-bold tracking-tighter uppercase text-sm scale-95 active:scale-90 transition-transform hover:bg-[#2a2a2a]/40 hidden sm:block rounded-sm">
+            Enrol Now
+        </button>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<section class="relative px-12 mb-32 overflow-hidden">
+<div class="hero-glow absolute inset-0 pointer-events-none"></div>
+<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+<div class="lg:col-span-8">
+<h1 class="text-6xl md:text-8xl font-headline font-black tracking-tighter text-on-surface leading-none mb-8">
+                        THE SPACE WHERE <br/><span class="text-primary italic font-body font-light">ART BREATHES.</span>
+</h1>
+<div class="max-w-2xl">
+<p class="font-body text-2xl italic leading-relaxed text-on-surface-variant">
+                            Avakash — in Sanskrit, means space. Room. Possibility. We created Avakash because we believe every person deserves the space to discover classical art — regardless of where they live, how old they are, or how much experience they carry. Bharatnatyam is not a privilege of the few. It is a heritage that belongs to all of us.
+                        </p>
+</div>
+</div>
+<div class="lg:col-span-4 flex justify-end">
+<div class="w-full aspect-[3/4] bg-surface-container-high relative overflow-hidden">
+<img alt="Abstract Dance Form" class="w-full h-full object-cover grayscale opacity-60" data-alt="Monochrome 3D render of a geometric human silhouette in a dynamic dance pose, sharp edges, dark obsidian textures, moody lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWocgOyGloHydfs-ZPj97uVL_n--ZriO8J6hBVbdo-foBPSVLXiPhXQ9d8D1xhNoUC5BYq4KVZuyQeDfPVgsgzWkjTNFXnesPrZ7fPDrxrQWqVXHbT08XCdIEI1ycZivgGs8p3cyA43AelsXPaKeM2-Caqg9r4PbWIcwT-RxfpaxDgWtPb63o_b60pye19MFbm9T2CYvAaPT--CotZREXO89lwSVfF5nhfhZq8P9pXpjxXeFr8VkFSbXskg8QHyq8jp2e62pQVpl9y"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Meet Your Guru -->
+<section class="px-12 py-32 bg-surface-container-lowest">
+<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative order-2 lg:order-1">
+<div class="h-[600px] bg-surface-container-high overflow-hidden">
+<img alt="Ekta Kamble" class="w-full h-full object-cover grayscale" data-alt="A portrait of a classical dancer in a minimal studio, dramatic high-contrast lighting, dark and olive tones" src="https://lh3.googleusercontent.com/aida/ADBb0ugL7r_HOqBPMUoGb2i_16LEBR09zTUihwnQ-YAB_1fF5IyCJUDeGamuSY8Qv235Ic3UAHQTYLhX6rEUlyW3cqh_PsUmvI99ka1I9d4iF8PXFkwoENt0WODkm6WtsggRnWRM06Wy6ozR-kzRe2ChjVKpSK-Pwc6yb1I9jHmpeSI4_HW0DsOpFxuVzZGioJg3J8po3Q5Nj5gJc0EcUnVvKRs3EmroQ1esMQLHLUJFyPaMko9Fwwv2rUkF_v6pz1gcKQIuCrj0qk2xSA"/>
+</div>
+<div class="absolute -bottom-6 -right-6 p-8 glass-card">
+<h4 class="text-xl font-headline font-bold text-primary">Ekta Kamble</h4>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">BA in Dance | Pursuing MA (Dance)</p>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<span class="text-primary font-headline font-bold tracking-[0.4em] uppercase text-xs mb-8 block">Meet Your Guru</span>
+<h2 class="text-5xl font-headline font-black tracking-tighter uppercase mb-8 leading-none">Traditional Mastery <br/>&amp; Contemporary Guidance</h2>
+<p class="font-body text-xl leading-relaxed text-on-surface-variant mb-8">
+                        Ekta Kamble is a dedicated classical Bharatnatyam dancer with formal academic training and years of performance and teaching experience. Her approach blends the strictness of traditional classical training with the warmth of a mentor who genuinely invests in every student's growth. 
+                    </p>
+<p class="font-body text-xl leading-relaxed text-on-surface-variant italic">
+                        "At Avakash, she doesn't just teach Bharatnatyam — she lives it, and she passes that devotion on to every student who walks through these virtual doors."
+                    </p>
+</div>
+</div>
+</section>
+<!-- Our Philosophy -->
+<section class="px-12 py-32 max-w-4xl mx-auto text-center">
+<span class="text-primary font-headline font-bold tracking-[0.4em] uppercase text-xs mb-8 block">Our Philosophy</span>
+<h3 class="font-body text-4xl md:text-5xl italic text-on-surface leading-tight mb-12">
+                "At Avakash, we follow the time-honoured <span class="font-headline font-black not-italic tracking-tighter text-secondary">GURU-SHISHYA PARAMPARA</span> — the sacred tradition of a teacher who doesn't just instruct, but shapes."
+            </h3>
+<p class="font-body text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+                Ekta doesn't simply demonstrate adavus; she observes you, understands your body, corrects your posture, and celebrates your progress. Every student at Avakash is seen.
+            </p>
+<div class="w-16 h-px bg-outline-variant mx-auto mt-16"></div>
+</section>
+<!-- Our Values -->
+<section class="px-12 py-32 bg-surface-container-low">
+<div class="max-w-6xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="p-8 border border-outline-variant/30 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary mb-6 text-3xl">history_edu</span>
+<h5 class="font-headline font-bold uppercase text-sm tracking-widest mb-4">Tradition</h5>
+<p class="text-sm font-body italic text-on-surface-variant">Honoring the ancient roots while making them accessible for the modern world.</p>
+</div>
+<div class="p-8 border border-outline-variant/30 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary mb-6 text-3xl">self_improvement</span>
+<h5 class="font-headline font-bold uppercase text-sm tracking-widest mb-4">Discipline</h5>
+<p class="text-sm font-body italic text-on-surface-variant">The rigour of classical dance builds more than just strength; it builds character.</p>
+</div>
+<div class="p-8 border border-outline-variant/30 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary mb-6 text-3xl">groups</span>
+<h5 class="font-headline font-bold uppercase text-sm tracking-widest mb-4">Inclusivity</h5>
+<p class="text-sm font-body italic text-on-surface-variant">Space for everyone — age, background, and geography are no longer barriers.</p>
+</div>
+<div class="p-8 border border-outline-variant/30 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary mb-6 text-3xl">trending_up</span>
+<h5 class="font-headline font-bold uppercase text-sm tracking-widest mb-4">Growth</h5>
+<p class="text-sm font-body italic text-on-surface-variant">Personalized attention that focuses on the unique journey of every shishya.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<!-- Artistic Visual Archives -->
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#45483c]/15 bg-[#0e0e0e] flex flex-col md:flex-row justify-between items-center px-12 py-16">
+<div class="mb-8 md:mb-0">
+<a href="index.html"><img src="images/logo.png" alt="Avakash Logo" class="h-16 w-16 object-cover rounded-full shadow-xl border border-outline-variant/30 mb-4"></a>
+<span class="text-[#e5e2e1] font-bold text-lg">Avakash — The Art Space.</span>
+<p class="font-['Newsreader'] italic text-sm tracking-wide text-[#c1cd89] mt-2">A Heritage for Everyone.</p>
+</div>
+<div class="flex space-x-8 mb-8 md:mb-0">
+<a class="font-['Newsreader'] italic text-sm tracking-wide text-[#e5e2e1]/60 hover:text-[#c1cd89] transition-colors duration-500" href="#">Privacy</a>
+<a class="font-['Newsreader'] italic text-sm tracking-wide text-[#e5e2e1]/60 hover:text-[#c1cd89] transition-colors duration-500" href="#">Terms</a>
+<a class="font-['Newsreader'] italic text-sm tracking-wide text-[#e5e2e1]/60 hover:text-[#c1cd89] transition-colors duration-500" href="contact.html">Contact</a>
+<a class="font-['Newsreader'] italic text-sm tracking-wide text-[#e5e2e1]/60 hover:text-[#c1cd89] transition-colors duration-500" href="https://www.instagram.com/ektak_162/" target="_blank">Instagram</a>
+</div>
+<div class="text-[#e5e2e1]/40 text-xs font-headline uppercase tracking-tighter">
+            © 2024 Avakash Art Space.
+        </div>
+</footer>
+</body></html>

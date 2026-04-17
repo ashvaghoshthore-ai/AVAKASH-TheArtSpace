@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#556B2F",
+                        "on-primary": "#ffffff",
+                        "background-light": "#f7f7f6",
+                        "background-dark": "#1a1d15",
+                        "surface": "#1a1d15",
+                        "on-surface": "#e5e2e1",
+                        "secondary": "#8f9284",
+                        "outline-variant": "#45483c"
+                    },
+                    fontFamily: {
+                        "display": ["Inter"],
+                        "headline": ["Inter"],
+                        "body": ["Newsreader"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-transition {
+            background: linear-gradient(to bottom, #131313 0%, rgba(19, 19, 19, 0) 100%);
+        }
+        .glass-panel {
+            background: rgba(53, 53, 52, 0.4);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .sculpted-shadow {
+            box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+        }
+        body {
+            background-color: #1a1d15;
+            color: #e5e2e1;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary/30 selection:text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/60 backdrop-blur-xl transition-all duration-[400ms] ease-in-out border-b border-outline-variant/10">
+<div class="flex justify-between items-center px-6 lg:px-12 py-6 max-w-[1920px] mx-auto">
+<a href="index.html" class="flex items-center gap-4">
+    <img src="images/logo.png" alt="Avakash Logo" class="h-12 w-12 object-cover rounded-full shadow-lg border border-outline-variant/30">
+    <div class="text-xl md:text-2xl font-black tracking-tighter text-[#e5e2e1] uppercase font-headline">Avakash</div>
+</a>
+<div class="hidden md:flex items-center gap-8 lg:gap-12">
+<a class="font-['Inter'] font-bold tracking-tighter uppercase text-[#e5e2e1] hover:text-[#c1cd89] transition-colors duration-300" href="index.html">Home</a>
+<a class="font-['Inter'] font-bold tracking-tighter uppercase text-[#e5e2e1] hover:text-[#c1cd89] transition-colors duration-300" href="services.html">Classes</a>
+<a class="font-['Inter'] font-bold tracking-tighter uppercase text-[#e5e2e1] hover:text-[#c1cd89] transition-colors duration-300" href="about.html">About &amp; Gallery</a>
+</div>
+<button onclick="window.location.href='contact.html'" class="bg-primary text-on-primary px-6 py-2.5 font-bold tracking-tighter uppercase text-sm scale-95 active:scale-90 transition-transform hover:bg-[#2a2a2a]/40 hidden sm:block rounded-sm">
+            Enrol Now
+        </button>
+</div>
+</nav>
+<main class="relative min-h-screen pt-32 pb-24 overflow-hidden">
+<!-- Stage Lighting Background Effect -->
+<div class="absolute top-0 left-1/4 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[160px] -z-10"></div>
+<div class="absolute bottom-0 right-0 w-[600px] h-[600px] bg-secondary/5 rounded-full blur-[140px] -z-10"></div>
+<div class="max-w-[1440px] mx-auto px-8 md:px-16 grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Left Side: Content & Image -->
+<div class="lg:col-span-6 space-y-12">
+<div class="space-y-6">
+<div class="space-y-2">
+<span class="font-headline text-primary font-bold tracking-widest uppercase text-xs">Begin Your Journey</span>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] text-on-surface">
+                        YOUR FIRST <br/> <span class="italic font-body font-normal text-secondary">Step Begins Here.</span>
+</h1>
+</div>
+<p class="text-xl md:text-2xl text-on-surface/80 max-w-lg leading-relaxed italic">
+                    "The stage is set. The rhythm is calling. All that's missing is you. Whether you're ready to enrol, have questions about our batches, or simply want to know if Avakash is the right fit — we'd love to hear from you."
+                </p>
+
+</div>
+<!-- Abstract Visual -->
+<div class="relative w-full aspect-[4/5] max-w-md">
+<img class="w-full h-full object-cover rounded-sm shadow-2xl" data-alt="A singular, elegant 3D abstract sculpture of a Bharatanatyam dancer's silhouette in a 'Mudra' pose, acting as a gateway or symbol of entry. The form is minimalist, composed of a few bold, sweeping lines in olive and gray against a deep black background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0cky66lxmZEIMW8N2NVzzPc_AzUh9pIEjSkHzY4Chro4FmG7c6bbOGBJeflC5VP7WIZPi5CaXWdmWWoBCmZryrE3kDsxxmwCdRd9sg5IEUMEPIVamUTelzx6n-XOItONUCz4jdMy_3jvAZdiEw1qi2VHdnr1q1JdVu_L8GEGRzv3Np48kTIDAb7ovA4-cMlAMua_FElJ4VHDTbaFjEMYUeHNo6Wmj58iSs3hIeyvl2rO85v8EGf2zZt9aH-OehgzaNRBaBGO5hhN9"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#1a1d15] via-transparent to-transparent opacity-40"></div>
+</div>
+
+</div>
+<!-- Right Side: Contact Hub -->
+<div class="lg:col-span-6 flex justify-center lg:justify-end">
+<div class="glass-panel w-full max-w-xl p-8 md:p-12 rounded-sm border border-outline-variant/15 sculpted-shadow flex flex-col space-y-8">
+<div class="mb-6">
+<h2 class="font-headline text-3xl font-black tracking-tighter uppercase text-on-surface mb-2">Connect With Us</h2>
+<div class="h-1 w-12 bg-primary"></div>
+<p class="mt-4 font-body italic text-lg text-on-surface/70 leading-relaxed">Reach out directly via Call, WhatsApp, or explore our journey on Instagram.</p>
+</div>
+<div class="flex flex-col space-y-6">
+<!-- Call Button -->
+<button onclick="window.location.href='tel:+919511681478'" class="w-full bg-primary hover:opacity-90 text-on-primary font-headline font-black uppercase tracking-tighter py-5 px-8 transition-all duration-300 scale-[0.98] active:scale-95 flex justify-between items-center group">
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined">call</span>
+<span>Direct Call</span>
+</div>
+<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+<!-- WhatsApp Button -->
+<button onclick="window.open('https://wa.me/919511681478', '_blank')" class="w-full border border-outline-variant/50 bg-[#1a1d15]/50 hover:bg-primary/20 text-on-surface hover:text-primary hover:border-primary font-headline font-black uppercase tracking-tighter py-5 px-8 transition-all duration-300 scale-[0.98] active:scale-95 flex justify-between items-center group">
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined">chat</span>
+<span>Chat on WhatsApp</span>
+</div>
+<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+<!-- Instagram Button -->
+<button onclick="window.open('https://www.instagram.com/ektak_162/', '_blank')" class="w-full border border-outline-variant/50 bg-[#1a1d15]/50 hover:bg-primary/20 text-on-surface hover:text-primary hover:border-primary font-headline font-black uppercase tracking-tighter py-5 px-8 transition-all duration-300 scale-[0.98] active:scale-95 flex justify-between items-center group">
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined">photo_camera</span>
+<span>Instagram Page</span>
+</div>
+<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-outline-variant/10 bg-[#1a1d15]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-12 w-full max-w-[1920px] mx-auto">
+<div class="flex flex-col space-y-3 mb-8 md:mb-0">
+<a href="index.html"><img src="images/logo.png" alt="Avakash Logo" class="h-16 w-16 object-cover rounded-full shadow-xl border border-outline-variant/30 mb-2"></a>
+<div class="text-[#e5e2e1] font-bold font-headline uppercase tracking-tighter text-lg">Avakash — The Art Space</div>
+<div class="flex flex-col text-sm text-on-surface/50 font-body italic">
+<span>9511681478 / 9822506469</span>
+<span>© 2024 Avakash Art Space. All Rights Reserved.</span>
+</div>
+</div>
+<div class="flex space-x-10">
+<a class="font-body italic text-sm text-[#e5e2e1]/60 hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="font-body italic text-sm text-[#e5e2e1]/60 hover:text-primary transition-colors" href="#">Terms</a>
+<a class="font-body italic text-sm text-[#e5e2e1]/60 hover:text-primary transition-colors" href="contact.html">Contact</a>
+<a class="font-body italic text-sm text-[#e5e2e1]/60 hover:text-primary transition-colors" href="https://www.instagram.com/ektak_162/" target="_blank">Instagram</a>
+</div>
+</div>
+</footer>
+</body></html>
